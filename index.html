@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/heart.png">
+    <script src="js/jokes.js"></script>
+    <title>Be Healthy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="smart">
+            <div class="logo">
+                <h2>Be Healthy</h2>
+            </div>
+            <div id="menu-lines" onclick="menu()">&#9776;</div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li class="menu"><a href="#">Home</a></li>
+                    <li class="menu"><a href="#bmi_calc">Tools</a></li>
+                    <li class="menu"><a href="#footer">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="welcome" class="welcome">
+        <div class="hey">
+            <h1>Hey there,</h1>
+        </div>
+        <div class="disc">
+            <h2>this is to make you happy and healthy
+            </h2>
+            <p>there are something  below to make you laugh as laughter is best medicine and also there are some tools to maintain your fitness</p>
+        </div>
+    </section>
+    <section class="heart">
+        <div class="left">
+            <img src="img/heart.png">
+        </div>
+        <div class="right">
+            
+        </div>
+    </section>
+    <section>
+        <div id="bmi_calc" class="bmi_calc">
+            <h2>Body Mass Index (BMI) CALCULATOR</h2>
+            <h3>Weight in kg</h3>
+            <input type="number" placeholder="weight in kilograms" id="weight">
+            <h3>Height in foot</h3>
+            <input type="number" placeholder="height in feet" id="height">
+            <button class="btn" id="btn" role="button"><a href="#bmi_result">Calculate</a></button>
+        </div>
+    </section>
+    <section id="bmi_result" class="bmi_result">
+        
+
+        
+    </section>
+    <section class="nutrilitics">
+        <div class="tool">
+            <h2>Nutrilitics</h2>
+            <h4>this will tell you the nutritious values of the dishes you want and the most healthisest and tasty recipe</h4>
+            <input type="text" placeholder="e.g. chicken,wheat,rice,bread,etc" id="dish">
+            <button role="button" class="btn" id="search" onclick="recipe()">Search</button>
+        </div>
+        <div class="food">
+            <img src="img/thali.png">
+        </div>
+    </section>
+    <section class="nutrilitics-results">
+        <div class="label">
+           
+        </div>
+        <div class="nutrilitics_results">
+        <div class="nutrition">
+            <div class="nutri-head">
+
+            </div>
+            <ul id="nutri-list">
+                
+            </ul>
+        </div>
+        <div class="ingredient">
+            <div class="ingre-head"></div>
+            <ul id="ingre-list">
+               
+            </ul>
+        </div>
+        
+    </div>
+    <div class="get_recipe">
+       
+    </div>
+    </section>
+    <footer id="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/nitesh.sahni.902" target="_blank"><img src="img/facebook.png"></a>
+            <a href="https://www.instagram.com/hey_chuck_/" target="_blank"><img src="img/insta.png"></a>
+            <a href="mailto:sahninitesh01@gmail.com" target="_blank"><img src="img/email.png"></a>
+            
+        </div>
+
+    </footer>
+</body>
+<script>
+    function menu(){
+        var menu0=document.getElementsByClassName('menu')[0]
+        var menu1=document.getElementsByClassName('menu')[1]
+        var menu2=document.getElementsByClassName('menu')[2]
+        var menu3=document.getElementsByClassName('menu')[3]
+        if(menu0.style.display=="block"){
+            menu0.style.display='none'
+            menu1.style.display='none'
+            menu2.style.display='none'
+            
+        }else{
+            menu0.style.display='block'
+            menu1.style.display='block'
+            menu2.style.display='block'
+            
+        }
+    }
+</script>
+<script src="js/bmi.js"></script>
+<script src="js/food.js"></script>
+</html>
